@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+h2 {color: rgba(0, 0, 0, 0.747);}
+
+/* 나눔명조 폰트
+font-family: 'Nanum Myeongjo', serif; */
+
+/* 노토산스
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+header {
+    width: 100%;
+    /* width:1920px; */
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-left: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+header a {
+    width: 200px;
+    height: 60px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+header i {
+    font-size: 40px;
+    color: red;
+    
+}
+
+header h1 {
+    display: inline;
+    color: black;
+}
+
+header a:nth-of-type(2),
+header a:nth-of-type(3) {
+    width: 6%;
+    height: 40px;
+    display: inline-block;
+    color: black;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+header a:nth-of-type(2) {
+    position: absolute;
+    left: 76%;
+}
+header a:nth-of-type(3) {
+    position: absolute;
+    left: 83%;
+}
+
+#wrap {
+    width: 78%; 
+    height: 3000px;
+    margin: auto;
+    padding-top: 100px;
+    box-sizing: border-box;
+    /* background-color: rgb(249, 249, 205); */
+    position: relative;
+}
+
+#wrap p {
+    display: inline-block;
+    margin-top: 10px;
+}
+.content::after {
+    content: "·";
+    margin: 6px;
+}
+#wrap p:nth-of-type(3):after {
+    content: "";
+}
+
+.wish {
+    width: 90px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 160px;
+    right: 0;
+}
+
+.wish i {
+    color: red;
+}
+
+.img_wrap {
+    /* width: 100%; */
+    margin-top: 30px;
+    height: 400px;
+}
+.img_b {
+    width: 50%;
+    height: 400px;
+    background: url(../img/Gyeongju/Gyeongju1_1.webp)
+                no-repeat;
+    background-position: center;
+    background-size: cover;     
+    float: left;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img_b:hover {
+    filter: brightness(85%);
+    transition: .5s;
+}
+
+.img_s {
+    width: 23%;
+    height: 190px;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 2%; 
+}
+
+.img_s:hover {
+    filter: brightness(80%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.img_s img {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+}
+
+#md_box {
+    width: 100%;
+    height: 1140px;
+    /* background-color: rgba(28, 192, 247, 0.303); */
+    position: relative;
+}
+
+.content_wrap {
+    width: 58%;
+    height: 640px;
+    /* background-color: rgba(0,0,0,.1); */
+    margin-top: 50px;
+    float: left;
+    position: relative;
+}
+
+.content_wrap h2 {
+    color: black;
+}
+
+.content_wrap p{
+    color: #565555;
+}
+
+.host {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.host img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;   
+}
+
+
+.textbox {
+    width: 100%;
+    height: 250px;
+    /* background-color: rgba(0,0,0,.1); */
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.textbox:last-child {
+    height: 330px;
+    border-top: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    padding: 6px 16px;
+}
+
+.textbox:last-child p {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.textbox i {
+    margin-right: 10px;
+}
+
+.textbox p {
+    margin: 0 0 20px 30px;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.pay_box {
+    width: 32%;
+    height: 600px;
+    /* background-color: rgba(0,0,0,.1); */
+    float: left;
+    position: fixed;
+    position: absolute;
+    margin-top: 90px;
+    right: 30px;
+}
+
+.pay_01 {
+    height: 450px;
+    position: relative;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.pay_01 h2 {
+    display: inline-block;
+    font-size: 22px;
+    margin: 20px 0 0 7.5%;
+}
+
+.pay_01 i {
+    margin-left: 79%;
+}
+
+.checkin_out {
+    width: 86%;
+    height: 120px;
+    margin: auto;
+}
+
+.checkin_out input {
+    width: 49.4%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #7f7e7e;
+    border-radius: 5px;
+}
+
+.form-select {
+    width: 99.8%;
+    height: 40px;
+    margin-top: 8px;
+    color: #757474;
+    border: 1px solid #7f7e7e;
+    border-radius: 5px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.reservation {
+    width: 86%;
+    height: 50px;
+    background-color: rgb(251, 52, 85);
+    border-radius: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.reservation h3 {
+    color: #fff;
+}
+
+.p_wrap {
+    text-align: center;
+    color: #565555;
+    margin: 5px 0 8px 0;
+}
+
+
+.total_pay {
+    width: 86%;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    color: #565555;
+}
+
+.total_pay p:last-child {
+    position: absolute;
+    right: 0;
+}
+
+.total_pay_01 {
+    width: 86%;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+    border-top: 1px solid #ccc;
+}
+
+.total_pay_01 p:last-child {
+    position: absolute;
+    right: 0;
+}
+
+.service {
+    width: 58%;
+    height: 430px;
+    /* background-color: rgba(252, 225, 225, 0.1); */
+    clear: both;
+    margin-top: 20px;
+    padding: 40px 0 0 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.service h2 {
+    margin: 15px 0 35px 0;
+}
+
+.service i {
+    font-size: 22px;
+    margin: 0 10px 25px ;
+}
+
+
+#notice {
+    height: 280px;
+    /* background-color: rgba(235, 140, 248, 0.26); */
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#notice h2 {
+    margin-bottom: 40px;
+}
+
+#notice h3 {
+    margin-bottom: 5px;
+}
+
+#notice p {
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.notice_s {
+    width: 32%;
+    height: 200px;
+    /* background-color: rgba(0,0,0,.1); */
+    float: left;
+    margin-right: 5px;
+}
+
+.map {
+    width: 94%;
+    height: 700px;
+    margin-left: 20px;
+    
+}
+.map h2 {
+    margin-bottom: 20px;
+}
+#footer {
+    width: 78%;
+    height: 80px;
+    margin: auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+}
+
+#footer p {
+    text-align: center;
+}
+
+
